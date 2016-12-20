@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<!-- {% load fontawesome %} -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quotify | Share and Discover Awesome Quotes</title>
+    <link rel="stylesheet" href="{% static 'quotify/css/styles.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'quotify/css/font-awesome.min.css' %}"> -->
+    <script src="https://use.typekit.net/iii7xtz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- {% fontawesome_stylesheet %} -->
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="logo">Quotable Quotes</div>
+      <div class="left-col">
+      <!-- For checking messages with flash -->
+      <div class="alert-error">
+        {% if messages %}
+          {% for msg in messages %}
+          {{msg}}
+          {% endfor %}
+        {% endif %}
+      </div>
+    <h2>New? Register</h2>
+        <br>
+        <form action="/register_process" method="post">
+          {% csrf_token %}
+      		<input type="text" name="first_name" placeholder="First Name">
+          <input type="text" name="last_name" placeholder="Last Name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <input type="password" name="confirm_password" placeholder="Confirm Password">
+          <input type="date" name="dateofbirth" value="">
+      		<input type="submit" value="Register">
+        </form>
+      </div>
+      <div class="right-col">
+        <br>
+        <h2>Login</h2>
+        <form action="/login_process" method="post">
+          {% csrf_token %}
+          <input type="text" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

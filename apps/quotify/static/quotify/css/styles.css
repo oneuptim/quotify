@@ -1,0 +1,258 @@
+body {
+  font-family: "futura-pt",sans-serif;
+}
+#wrapper {
+  width: 1200px;
+  background: #E0E0E0;
+  padding:20px 40px 200px 40px;
+  margin: 0 auto;
+  display: block;
+}
+
+.left-col {
+  width: 750px;
+  margin-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right-col {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+input {
+  width: 97.5%;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 100;
+  margin: 20px 0;
+  border: none;
+}
+
+input[type=submit] {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 20px;
+  background-color: #e80c79;
+  color: #fff;
+  border: none;
+  width: 100%;
+  pointer: cursor;
+}
+
+textarea {
+  width: 97%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 100;
+  background-color: white;
+  border: none;
+}
+
+
+/*input[type=submit] .logoutBtn {
+  background-color: red;
+  width: 42%;
+  vertical-align: baseline;
+}*/
+
+hr {
+  width: 100%;
+  border-top: solid 1px #b9b9b9;
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-family: "futura-pt",sans-serif;
+  color: #b9b9b9;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 100;
+}
+
+h4 {
+  font-family: "futura-pt",sans-serif;
+}
+
+.flash_success {
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "futura-pt",sans-serif;
+  width: 40%;
+  display: block;
+}
+
+.flash_error {
+  width: 40%;
+  font-size: 14px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "futura-pt",sans-serif;
+  display: block;
+}
+
+.header {
+  width: 320px;
+  margin-bottom: 50px;
+  margin-top: -60px;
+  margin-left: 715px;
+}
+
+.logo {
+  width: 440px;
+  display: inline-block;
+  height: 60px;
+  font-size: 60px;
+  font-weight: 100;
+  color: rgba(0, 30, 53, 0.77);
+  opacity: 1;
+  font-family: "viktor-script";
+  font-style: italic;
+  margin: 20px 0 60px 0;
+}
+
+h2 {
+s  font-family: "futura-pt",sans-serif;
+  margin-bottom: 20px;
+}
+
+h3 {
+  display: inline;
+  margin-right: 0px;
+  font-family: "futura-pt",sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "futura-pt",sans-serif;
+}
+
+.postsBtn {
+  background-color: #4caf50;
+  float: right;
+  width: 25%;
+  margin-right: 25px;
+  border-radius: 3px;
+  font-family: "futura-pt",sans-serif;
+}
+
+.spashBtn {
+  background-color: #4CAF50;
+  width: 105%;
+  border-radius: 4px;
+  font-family: "futura-pt",sans-serif;
+  }
+
+.commentsBtn {
+  background-color: #6666a9;
+  float: right;
+  width: 25%;
+  margin-right: 25px;
+  border-radius: 3px;
+  font-family: "futura-pt",sans-serif;
+}
+
+.posts {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.comments {
+  display: inline;
+  /*background-color: pink;*/
+}
+
+/*textarea .comments {
+  height: 10px;
+}*/
+
+.wall {
+  width: 900px;
+  /*background-color: yellow;*/
+  padding: 20px;
+}
+
+/*h5 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "futura-pt",sans-serif;
+  margin-bottom: 0px;
+  color: #6060d4;
+}*/
+
+.post, h5 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #6060d4;
+  margin-top: 120px;
+}
+
+a, h5 {
+  color: #e80c79;
+  font-weight: normal;
+}
+
+a:hover, h5 {
+  opacity: 0.5;
+}
+
+h6 {
+  font-size: 12px;
+  font-family: "futura-pt",sans-serif;
+  margin-bottom: 0px;
+  color: #6060d4;
+}
+
+p {
+  font-size: 18px;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 100;
+}
+
+.quotes {
+  background-color: rgba(0, 30, 53, 0.77);
+  color: #fff;
+  padding: 20px;
+  margin: 40px 0;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.fav_quotes {
+  background-color: rgba(0, 6, 10, 0.04);
+  color: #000;
+  padding: 20px;
+  margin-top: 20px;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.menu {
+  float: right;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.alert-error { color: red; margin-bottom: 20px; font-size: 18px; font-weight: 100;}
+
+.alert-success { background-color: #35bb65; color: white; padding:20px; width: 98%; margin-bottom: 20px; font-size: 18px; font-weight: 100;}

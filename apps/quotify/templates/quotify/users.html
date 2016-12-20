@@ -1,0 +1,36 @@
+{% load staticfiles %}
+{% load fontawesome %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quotify | Share and Discover Awesome Quotes</title>
+    <link rel="stylesheet" href="{% static 'quotify/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'quotify/css/font-awesome.min.css' %}">
+    <script src="https://use.typekit.net/iii7xtz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    {% fontawesome_stylesheet %}
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="logo">Quotable Quotes</div>
+      <div class="menu">
+        <h3><a href="/quotes">{% fontawesome_icon 'dashboard' color='#e80c79' %} Dashboard</a> | <a href="/users/{{ request.session.id }}">{% fontawesome_icon 'user' color='#e80c79' %} Account</a> | <a href="/logout"> {% fontawesome_icon 'lock' color='#e80c79' %} Logout</a></h3>
+      </div>
+      <br>
+      <!-- <div class="left-col"> -->
+        <h3>{{ quotePoster }} has shared {{ quoteCount }} quotes.</h3>
+        {% for quote in userQuotes %}
+        <div class="quotes">
+          <p>{{ quote.quote }}</p>
+          <p>- <i>{{ quote.author }}</i></p>
+          <hr><br>
+          Posted on {{ quote.created_at }} {% fontawesome_icon 'heart' color='#e80c79' %}
+        </div>
+        {% endfor %}
+      <!-- </div> -->
+      <!-- <div class="right-col">
+      </div> -->
+    </div>
+  </body>
+</html>
